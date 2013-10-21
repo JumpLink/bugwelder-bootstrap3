@@ -1,0 +1,34 @@
+.bgw-vertical-nav {
+  background-color: @black;
+  .menu-font();
+  font-size: 15px;
+  .default-shadow();
+  .border-radius(3px);
+  li {
+    > a {
+      padding: 5px 10px;
+      color: @bg-color;
+      &:hover {
+        color: @white;
+        background-color: @black;
+      }
+    }
+  }
+  li.active {
+    > a {
+      color: @red;
+    }
+  }
+  li.title {
+    color: @white;
+    padding: 5px 10px;
+  }
+}
+
+.left-nav {
+  dt, dd, a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

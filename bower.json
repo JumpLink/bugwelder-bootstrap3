@@ -1,0 +1,23 @@
+{
+  "name": "bugwelder-bootstrap3",
+  "version": "0.0.1",
+  "homepage": "https://github.com/bugwelder/bugwelder-bootstrap3",
+  "description": "bugwelder bootstrap 3 theme",
+  "main": "less/style.less",
+  "keywords": [
+    "bugwelder",
+    "bootstrap"
+  ],
+  "authors": [
+    "Pascal Garber'"
+  ],
+  "license": "proprietary",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

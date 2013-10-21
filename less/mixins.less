@@ -1,0 +1,53 @@
+/*
+ * see: http://css-tricks.com/transparent-borders-with-background-clip/;
+ * @area: Can be border, padding or content;
+ */
+.background-clipping(@area) {
+	-moz-background-clip: @area;     /* Firefox 3.6 */
+	-webkit-background-clip: @area;  /* Safari 4? Chrome 6? */
+	background-clip: ~"@{area}-box";
+}
+
+.schreibmaschine-font() {
+	font-family: 'Special Elite',cursive;
+}
+
+.schreibschrift-font() {
+	font-family: 'Merienda',cursive;
+}
+
+.menu-font() {
+	font-family: 'Fjalla One', sans-serif;
+}
+
+.border-image(@url, @top, @right, @bottom, @left, @vertical, @horizontal) {
+	border-style: solid;
+	-moz-border-image: url(@url) @top @right @bottom @left @horizontal @vertical; 
+	-webkit-border-image: url(@url) @top @right @bottom @left @horizontal @vertical;
+	-o-border-image: url(@url) @top @right @bottom @left @horizontal @vertical;
+	border-image: url(@url) @top @right @bottom @left @horizontal @vertical;
+}
+
+.none-border-image() {
+	-moz-border-image: none;
+	-webkit-border-image: none;
+	-o-border-image: none;
+	border-image: none;
+	border: none;
+}
+
+.default-shadow() {
+	box-shadow: 0 0 7px 0px #888;
+}
+
+.none-shadow() {
+	box-shadow: none;
+}
+
+.rotate(@deg) {
+	-webkit-transform: rotate(@deg);
+	-moz-transform: rotate(@deg);
+	-o-transform: rotate(@deg);
+	-ms-transform: rotate(@deg);
+	transform: rotate(@deg);
+}
