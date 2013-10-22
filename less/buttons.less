@@ -30,7 +30,7 @@
 }
 
 /* Bootstrap Bugwelder Buttons */
-.btn-bgw_green {
+.btn-bgw-green {
 	background-color: hsl(152, 39%, 29%) !important;
 	background-repeat: repeat-x;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="@green", endColorstr="@green-dark");
@@ -48,7 +48,7 @@
 
   color: @white;
 }
-.btn-bgw_blue {
+.btn-bgw-blue {
   background-color: hsl(162, 18%, 62%) !important;
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#aac4bc", endColorstr="#8cafa5");
@@ -67,7 +67,7 @@
   color: @black;
 }
 
-.btn-bgw_yellow {
+.btn-bgw-yellow {
   background-color: hsl(47, 56%, 33%) !important;
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ab9030", endColorstr="#836e25");
@@ -84,14 +84,14 @@
   -webkit-font-smoothing: antialiased;
 }
 
-.btn-bgw_brown {
-  .buttonBackground(@btnBackground, @btnBackgroundHighlight, @grayDark, 0 1px 1px rgba(255,255,255,.75));
+.btn-bgw-brown {
+  .buttonBackground(@btn-bgw-bg, @btn-bgw-bg-highlight, @gray-dark, 0 1px 1px rgba(255,255,255,.75));
   border: 1px solid #957e5d;
   *border: 0; // Remove the border to prevent IE7's black border on input:focus
   border-bottom-color: darken(#957e5d, 10%);
   // Hover state
   &:hover {
-    color: @grayDark;
+    color: @gray-dark;
     text-decoration: none;
     background-position: 0 -15px;
     .transition(background-position .1s linear);
@@ -133,4 +133,24 @@
   i {
     line-height: inherit;
   }
+}
+
+.btn-default {
+  .btn-bgw-brown();
+}
+
+.btn-success {
+  .btn-bgw-green();
+}
+
+.btn-warning {
+  .btn-bgw-yellow();
+}
+
+.btn-danger {
+  //.btn-bgw-red();
+}
+
+.btn-primary {
+  .btn-bgw-blue();
 }

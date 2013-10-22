@@ -1,3 +1,5 @@
+/* Colors */
+
 @black: 		#0f0705;
 @black-image: 		"../images/paper/black-small.png";
 
@@ -9,35 +11,23 @@
 @green-dark: 	#2d664b;
 @blue-link-color: #1e7ec8;
 
-@data-table-color-dark: #d9e5ee;
-@data-table-color-light: lighten(@data-table-color-dark, 5%);
+/* Basics */
 
-@data-table-border-red: #f9aeae;
+@bg-color: #EECDA2;
+@body-bg: @bg-color;
 
-// @btn-color: #dddddd;
-@btn-color: #B79E7B;
+/* TODO sort */
 
-// @inputBorder: darken(@btn-color, 10%);
 @inputBorder: #957e5d;
 @inputFocusBorder: rgba(246,163,21,.8);
 @inputFocusBorderGlowColor: rgba(246,163,21,.6);
 
 @link-color: @red;
 
-@bg-color: #EECDA2;
 @bg-image-top: "../images/bg.png";
 @bg-image: "../images/paper/eecda2-small.png";
 
 @sidebar-border-color: #c1a782;
-
-@main-width: 1065px;
-@col-left-width: 195px; //+17px
-@col-right-width: 195px; //+17px
-@col-space: 17px;
-@col-left-width-with-space: @col-left-width + @col-space;
-@col-right-width-with-space: @col-right-width + @col-space;
-@col2-left-main-width: @main-width - @col-left-width-with-space;
-@product-grid-width: round((@col2-left-main-width / 5) - 0.5);
 
 @block-title: #3f1e0d;
 @block-titel-text-color: @black;
@@ -49,7 +39,6 @@
 @footer-color: #f9eed2;
 @footer-image: "../images/paper/f9eed2-small.png";
 
-//@footer-text-color: #7f6b50;
 @footer-text-color: @black;
 
 @product-bg: #c3a782;
@@ -57,32 +46,43 @@
 
 @toolbar-border-color: #d0a76c;
 
-
 @news-header-bgcolor: #3f1e0d;
 @news-font-color: #ca8307;
 
-// Buttons
-// -------------------------
-@btnBackground:                     @btn-color;
-@btnBackgroundHighlight:            darken(@btn-color, 10%);
-@btnBorder:                         rgba(0, 0, 0, 0);
+/* Brands */
 
-@btnPrimaryBackground:              @navbarBackground;
-@btnPrimaryBackgroundHighlight:     @navbarBackground;
+@brand-success:              @green;
+@brand-warning:              @orange;
+@brand-danger:               @red;
 
-@btnInfoBackground:                 @purple;
-@btnInfoBackgroundHighlight:        @purple;
+/* Buttons */
 
-@btnSuccessBackground:              @green;
-@btnSuccessBackgroundHighlight:     @green;
+@btn-color: #B79E7B;
+@btn-bgw-bg:                     @btn-color;
+@btn-bgw-bg-highlight:           darken(@btn-color, 10%);
 
-@btnWarningBackground:              @orange;
-@btnWarningBackgroundHighlight:     @orange;
 
-@btnDangerBackground:               @yellow;
-@btnDangerBackgroundHighlight:      @yellow;
+/* Panels */
 
-@btnInverseBackground:              #27666D;
-@btnInverseBackgroundHighlight:     #27666D;
+@panel-default-border: @black;
+@panel-default-heading-bg: @black;
+@panel-default-text: @bg-color;
 
-@baseBorderRadius:      0;
+/* Tables */
+
+@data-table-color-dark: #d9e5ee;
+@data-table-color-light: lighten(@data-table-color-dark, 5%);
+@data-table-border-red: #f9aeae;
+
+/* Navbar */
+
+@navbar-margin-bottom: 0;
+@navbar-default-color: @bg-color;
+@navbar-default-bg: @black;
+
+@navbar-default-link-color: @bg-color;
+@navbar-default-link-hover-color: @white;
+@navbar-default-link-active-color: @red;
+
+/* Dropdowns */
+@dropdown-link-hover-bg: @orange;
