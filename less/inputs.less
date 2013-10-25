@@ -41,3 +41,26 @@ input[type="color"],
     .box-shadow(~"inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px @{input-focus-border}");
   }
 }
+
+.command-bar {
+  width: 900px;
+  .command-bar-form {
+    position: relative;
+    z-index:95;
+    width:220px;
+    .transition(width 0.4s ease-in-out);
+  }
+  .navbar-nav {
+    position: absolute;
+    padding-left: 230px;
+    .transition(opacity 0.4s linear);
+  }
+  &.focus {
+    .command-bar-form {
+      width: 400px;
+    }
+    .navbar-nav {
+      opacity: 0;
+    }
+  }
+}
