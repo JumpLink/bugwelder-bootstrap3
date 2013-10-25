@@ -4,7 +4,6 @@
   text-shadow: @textShadow;
   #gradient > .vertical(@primaryColor, @secondaryColor);
   border-color: @secondaryColor @secondaryColor darken(@secondaryColor, 15%);
-  /*border-color: rgba(0,0,0,.1) rgba(0,0,0,.1) fadein(rgba(0,0,0,.1), 15%);*/
 }
 
 // Button backgrounds
@@ -85,7 +84,7 @@
 }
 
 .btn-bgw-brown {
-  .buttonBackground(@btn-bgw-bg, @btn-bgw-bg-highlight, @gray-dark, 0 1px 1px rgba(255,255,255,.75));
+  .buttonBackground(@btn-default-bg, @btn-default-bg-highlight, @gray-dark, 0 1px 1px rgba(255,255,255,.75));
   border: 1px solid #957e5d;
   *border: 0; // Remove the border to prevent IE7's black border on input:focus
   border-bottom-color: darken(#957e5d, 10%);
@@ -119,11 +118,8 @@
 
 .btn,
 .btn:hover {
-  // background-image: none;
-  // box-shadow: none;
   text-shadow: none !important;
   font-weight: normal !important;
-  // font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-style: normal !important;
   font-variant: normal !important;
   text-decoration: none !important;

@@ -18,10 +18,6 @@
 
 /* TODO sort */
 
-@inputBorder: #957e5d;
-@inputFocusBorder: rgba(246,163,21,.8);
-@inputFocusBorderGlowColor: rgba(246,163,21,.6);
-
 @link-color: @red;
 
 @bg-image-top: "../images/bg.png";
@@ -57,10 +53,10 @@
 
 /* Buttons */
 
-@btn-color: #B79E7B;
-@btn-bgw-bg:                     @btn-color;
-@btn-bgw-bg-highlight:           darken(@btn-color, 10%);
-
+@btn-default-color:                   @black;
+@btn-default-bg:                      #B79E7B;
+@btn-default-bg-highlight:            darken(@btn-default-bg, 10%);
+@btn-default-border:                  #957e5d;
 
 /* Panels */
 
@@ -76,13 +72,34 @@
 
 /* Navbar */
 
-@navbar-margin-bottom: 0;
-@navbar-default-color: @bg-color;
-@navbar-default-bg: @black;
+@navbar-margin-bottom:              0;
+@navbar-default-color:              @bg-color;
+@navbar-default-bg:                 @black;
 
-@navbar-default-link-color: @bg-color;
-@navbar-default-link-hover-color: @white;
-@navbar-default-link-active-color: @red;
+@navbar-default-link-color:         @bg-color;
+@navbar-default-link-hover-color:   @white;
+@navbar-default-link-active-color:  @red;
+
+/* Nav */
+
+@nav-open-caret-border-color:   @bg-color;
+
 
 /* Dropdowns */
-@dropdown-link-hover-bg: @orange;
+
+@dropdown-bg:                   @black;
+@dropdown-caret-color:          @bg-color;
+@dropdown-caret-hover-color:    @black;
+@dropdown-divider-bg:           @bg-color;
+
+@dropdown-link-color:           @bg-color;
+@dropdown-link-hover-color:     @black;
+@dropdown-link-hover-bg:        @orange;
+
+
+/* inputs */
+
+@input-border:                  #957e5d;
+@input-focus-border:            rgba(246,163,21,.8);
+@input-focus-border-glowcolor:  rgba(246,163,21,.6);
+@input-group-addon-bg:          lighten(@btn-default-bg, 10%);
