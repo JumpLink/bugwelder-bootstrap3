@@ -1,9 +1,9 @@
 .table {
   th, td {
-    border-color: #a5865a;
+    border-color: @bg-color;
   }
 }
 .table-hover tbody tr:hover td,
 .table-hover tbody tr:hover th {
-  background-color: @bg-color;
+  background-color: darken(@bg-color, 10%);
 }
