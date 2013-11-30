@@ -1,0 +1,32 @@
+{
+  "name": "bugwelder-bootstrap3",
+  "homepage": "https://github.com/bugwelder/bugwelder-bootstrap3",
+  "description": "bugwelder bootstrap 3 theme",
+  "main": "less/style.less",
+  "keywords": [
+    "bugwelder",
+    "bootstrap"
+  ],
+  "authors": [
+    "Pascal Garber <jumplink@gmail.com>"
+  ],
+  "license": "proprietary",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "a04e5857c0",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "a04e5857c09f6c76bce7331228b3dc5b37d571bd"
+  },
+  "_source": "git@github.com:bugwelder/bugwelder-bootstrap3.git",
+  "_target": "*",
+  "_originalSource": "git@github.com:bugwelder/bugwelder-bootstrap3.git",
+  "_direct": true
+}
