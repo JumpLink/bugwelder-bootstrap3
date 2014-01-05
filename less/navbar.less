@@ -1,5 +1,8 @@
 .navbar-default {
   .border-top-radius(@default-border-radius);
+  &.navbar-static-top {
+    .border-top-radius(0);
+  }
   .menu-font();
   .navbar-nav{
     >li {
